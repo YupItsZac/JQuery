@@ -7,21 +7,21 @@ So, let's get started.
 ======
 Step 1): For this tutorial, we'll be using the .animate() feature included in JQueryUI. So, we'll need to include the JQuery and JQueryUI Javascript files. You can use the hosted content from Google, if you'd like.
 
-```
+```javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
 ```
 
 Step 2): You will need to store the background images youwish to use in DIVs. This gives us the ability to actually make the bg slide across the page.
 
-```
+```html
 <div id="bg" class="bg"></div>
 <div id="bgg" class="bgg"></div>
 ```
 
 Step 3): Now let's add some CSS to make sure the background divs stay in the back.
 
-```
+```css
 .bg {
   position: fixed;
   height: 100%;
