@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>YupItsZac's JQuery Sliding Background Demo</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+
+<style type="text/css">
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  position: fixed;
+  height: 100%;
+    background: url(http://www.hdwallpapers.in/walls/iron_man_3_new-wide.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+  z-index: 90;
+  margin: 0;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.bgg {
+  position: fixed;
+  height: 100%;
+    background: url(http://www.nyewall.com/images/2013/05/iron-man-3-movies-wallpaper-wallpaper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+  z-index: 90;
+  margin: 0;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  display: none;
+}
+
+.cont {
+  z-index: 102;
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  height: 400px;
+  top: 80px;
+  opacity: 0.8;
+  background-color: #000000;
+}
+
+.txt {
+  font-size: 52px;
+  font-weight: bold;
+  color: #fff;
+}
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){ 
+  $('#bg').delay(5000).hide('slide', {direction: 'left'}, 1000);
+  $('#bgg').delay(5000).show('slide', {direction: 'right'}, 1000);
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div id="bg" class="bg"></div>
+
+<div id="bgg" class="bgg"></div>
+
+<div class="cont">
+
+<h1 class="txt">This is body content! It doesn't move!</h1>
+
+</div>
+
+</body>
+
+</html>
+    
+    
+    
+    
+    
+    
+    
