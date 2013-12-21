@@ -8,8 +8,8 @@ So, let's get started.
 Step 1): For this tutorial, we'll be using the .animate() feature included in JQueryUI. So, we'll need to include the JQuery and JQueryUI Javascript files. You can use the hosted content from Google, if you'd like.
 
 ```javascript
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript"></script> 
 ```
 
 Step 2): You will need to store the background images youwish to use in DIVs. This gives us the ability to actually make the bg slide across the page.
@@ -58,7 +58,7 @@ Step 3): Now let's add some CSS to make sure the background divs stay in the bac
 
 Step 4): Finally, we need to add some Javascript, so the backgrounds will slide. You can do it automatically like a slideshow, but for this tutorial we will slide the BGs when the user clicks a button.
 
-```
+```javascript
 $('#bg').delay(5000).hide('slide', {direction: 'left'}, 1000);
 
 //.delay(5000) waits 5 seconds before sliding the first bg off the page with .hide()
